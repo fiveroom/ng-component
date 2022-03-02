@@ -1,0 +1,16 @@
+@import "../../style/index";
+@import "../../style/color";
+
+@test-prefix-cls: ~'@{five-prefix}-test';
+
+.@{test-prefix-cls} {
+    color: @primary-color;
+    box-sizing: border-box;
+    border: 1px solid red;
+    user-select: none;
+    transition: all .25s;
+    background-color: #12345678;
+    &-icon {
+        color: @text-color;
+    }
+}

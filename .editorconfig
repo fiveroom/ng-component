@@ -35,15 +35,12 @@ ij_css_use_double_quotes = true
 ij_css_value_alignment = do_not_align
 
 [*.feature]
-indent_size = 2
 ij_gherkin_keep_indents_on_empty_lines = false
 
 [*.haml]
-indent_size = 2
 ij_haml_keep_indents_on_empty_lines = false
 
 [*.less]
-indent_size = 2
 ij_less_align_closing_brace_with_properties = false
 ij_less_blank_lines_around_nested_selector = 1
 ij_less_blank_lines_between_blocks = 1
@@ -66,7 +63,6 @@ ij_less_use_double_quotes = true
 ij_less_value_alignment = 0
 
 [*.sass]
-indent_size = 2
 ij_sass_align_closing_brace_with_properties = false
 ij_sass_blank_lines_around_nested_selector = 1
 ij_sass_blank_lines_between_blocks = 1
@@ -88,7 +84,6 @@ ij_sass_use_double_quotes = true
 ij_sass_value_alignment = 0
 
 [*.scss]
-indent_size = 2
 ij_scss_align_closing_brace_with_properties = false
 ij_scss_blank_lines_around_nested_selector = 1
 ij_scss_blank_lines_between_blocks = 1
@@ -111,7 +106,6 @@ ij_scss_use_double_quotes = true
 ij_scss_value_alignment = 0
 
 [*.styl]
-indent_size = 2
 ij_stylus_align_closing_brace_with_properties = false
 ij_stylus_blank_lines_around_nested_selector = 1
 ij_stylus_blank_lines_between_blocks = 1
@@ -131,8 +125,6 @@ ij_stylus_use_double_quotes = true
 ij_stylus_value_alignment = 0
 
 [*.vue]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 4
 ij_vue_indent_children_of_top_level = template
 ij_vue_interpolation_new_line_after_start_delimiter = true
@@ -340,8 +332,6 @@ ij_typescript_while_on_new_line = false
 ij_typescript_wrap_comments = false
 
 [{*.bash,*.sh,*.zsh}]
-indent_size = 2
-tab_width = 2
 ij_shell_binary_ops_start_line = false
 ij_shell_keep_column_alignment_padding = false
 ij_shell_minify_program = false
@@ -517,8 +507,6 @@ ij_javascript_while_on_new_line = false
 ij_javascript_wrap_comments = false
 
 [{*.cjsx,*.coffee}]
-indent_size = 2
-tab_width = 2
 ij_continuation_indent_size = 2
 ij_coffeescript_align_function_body = false
 ij_coffeescript_align_imports = false
@@ -614,7 +602,6 @@ ij_coffeescript_use_semicolon_after_statement = false
 ij_coffeescript_var_declaration_wrap = normal
 
 [{*.har,*.jsb2,*.jsb3,*.json,.babelrc,.eslintrc,.prettierrc,.stylelintrc,bowerrc,jest.config}]
-indent_size = 2
 ij_json_keep_blank_lines_in_code = 0
 ij_json_keep_indents_on_empty_lines = false
 ij_json_keep_line_breaks = true
@@ -668,7 +655,6 @@ ij_markdown_min_lines_around_header = 1
 ij_markdown_min_lines_between_paragraphs = 1
 
 [{*.yaml,*.yml}]
-indent_size = 2
 ij_yaml_align_values_properties = do_not_align
 ij_yaml_autoinsert_sequence_marker = true
 ij_yaml_block_mapping_on_new_line = false
