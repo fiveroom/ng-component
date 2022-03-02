@@ -1,8 +1,19 @@
 import { join } from 'path'
 import { cwd } from "process";
 
-
-export default {
-    publishDir: join(cwd(), 'publish'),
-    components: join(cwd(), 'components')
+interface buildConfig {
+    publishDir: string;
+    components: string;
+    packageName: string
 }
+
+function getConfig():buildConfig {
+    let rootDir = cwd();
+    return {
+        publishDir: join(rootDir, 'publish'),
+        components: join(rootDir, 'components'),
+        packageName: 'component-angular'
+    }
+}
+
+export default getConfig()
