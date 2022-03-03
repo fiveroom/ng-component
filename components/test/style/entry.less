@@ -6,10 +6,14 @@
 .@{test-prefix-cls} {
     color: @primary-color;
     box-sizing: border-box;
-    border: 1px solid red;
+    border: 1px solid @primary-color;
     user-select: none;
     transition: all .25s;
     background-color: #12345678;
+    margin: 10px 10px 10px 10px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    border-right: 1px solid red;
     &-icon {
         color: @text-color;
     }

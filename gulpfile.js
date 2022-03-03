@@ -3,9 +3,16 @@ require('ts-node').register({
 });
 
 const {buildLess} = require('./script/gulpfile');
-const {buildLib} = require('./script/buildLib')
+const {buildProject} = require('./script/buildLib')
+const {series} = require("gulp");
+const del = require("del");
+const buildConfig = require('./script/build.config')
+
+const clean = () => {
+    return  del([buildConfig.default.publishDir])
+}
 
 module.exports = {
     buildLess,
-    buildLib
+    buildLib: series(clean, buildProject, buildLess)
 }
