@@ -65,14 +65,14 @@
                             "projects/site-doc/src/styles.less",
                             "node_modules/github-markdown-css/github-markdown.css",
                             "node_modules/prismjs/themes/prism.min.css",
-                            "node_modules/ng-zorro-antd/ng-zorro-antd.min.css"
+                            "node_modules/ng-zorro-antd/ng-zorro-antd.min.css",
+                            "projects/site-doc/src/css"
                         ],
                         "scripts": []
                     },
                     "configurations": {
                         "production": {
-                            "budgets": [
-                                {
+                            "budgets": [{
                                     "type": "initial",
                                     "maximumWarning": "500kb",
                                     "maximumError": "1mb"
@@ -83,12 +83,10 @@
                                     "maximumError": "4kb"
                                 }
                             ],
-                            "fileReplacements": [
-                                {
-                                    "replace": "projects/site-doc/src/environments/environment.ts",
-                                    "with": "projects/site-doc/src/environments/environment.prod.ts"
-                                }
-                            ],
+                            "fileReplacements": [{
+                                "replace": "projects/site-doc/src/environments/environment.ts",
+                                "with": "projects/site-doc/src/environments/environment.prod.ts"
+                            }],
                             "outputHashing": "all"
                         },
                         "development": {
