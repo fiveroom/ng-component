@@ -7,7 +7,7 @@ import * as postcssPreset from "postcss-preset-env";
 import * as cssnano from "cssnano";
 import * as rename from 'gulp-rename'
 
-import buildConfig from "./build.config";
+import buildConfig from "../../build.config";
 
 
 const lessPath = [join(buildConfig.components, 'components*.less'), join(buildConfig.components, '**/entry.less')];

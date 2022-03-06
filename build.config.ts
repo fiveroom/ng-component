@@ -4,7 +4,8 @@ import { cwd } from "process";
 interface buildConfig {
     publishDir: string;
     components: string;
-    packageName: string
+    packageName: string;
+    siteDir: string;
 }
 
 function getConfig():buildConfig {
@@ -12,7 +13,8 @@ function getConfig():buildConfig {
     return {
         publishDir: join(rootDir, 'publish'),
         components: join(rootDir, 'components'),
-        packageName: 'component-angular'
+        packageName: 'component-angular',
+        siteDir: join(rootDir, 'projects', 'site-doc')
     }
 }
 
