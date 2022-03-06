@@ -6,10 +6,7 @@
         "declaration": true,
         "declarationMap": true,
         "inlineSources": true,
-        "types": [],
-        "paths": {
-            "component-angular/*": ["./*"]
-        }
+        "types": []
     },
     "exclude": [
         "test.ts",
