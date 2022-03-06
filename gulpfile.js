@@ -1,12 +1,13 @@
 require('ts-node').register({
-    project: './script/tsconfig.json'
+    project: './script/gulp/tsconfig.json'
 });
 
-const {buildLess} = require('./script/gulpfile');
-const {buildProject} = require('./script/buildLib')
+const {buildLess} = require('./script/gulp/gulpfile');
+const {buildProject} = require('./script/gulp/buildLib')
+const {moveComponent, generateDoc} = require('./script/gulp/buildSite')
 const {series} = require("gulp");
 const del = require("del");
-const buildConfig = require('./script/build.config')
+const buildConfig = require('./build.config')
 
 const clean = () => {
     return  del([buildConfig.default.publishDir])
@@ -14,5 +15,7 @@ const clean = () => {
 
 module.exports = {
     buildLess,
-    buildLib: series(clean, buildProject, buildLess)
+    buildLib: series(clean, buildProject, buildLess),
+    moveComponent,
+    generateDoc
 }
