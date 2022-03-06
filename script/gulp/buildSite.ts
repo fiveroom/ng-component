@@ -22,9 +22,9 @@ export const moveComponent = () => {
         .pipe(dest(join(buildConfig.siteDir, 'src', 'app')))
 }
 
-function addContainer(content: string) {
+function addContainer(content: string, api = false) {
     return `
-        <section class="markdown-body">
+        <section class="markdown ${api ? 'api-container' : ''}">
             ${content}
         </section>
     `
@@ -56,7 +56,7 @@ export const generateDoc = (done) => {
                 // @ts-ignore
                 content.doc.html = template.html
                     .replace('{{head}}', replaceParentheses(addContainer(marked(head))))
-                    .replace("{{api}}", replaceParentheses(addContainer(marked(api))));
+                    .replace("{{api}}", replaceParentheses(addContainer(marked(api), true)));
                 // @ts-ignore
                 content.doc.ts = template.component
                     .replace('{{selector}}', `five-${componentName}-doc`)
