@@ -1,0 +1,51 @@
+:host{
+    display: block;
+    overflow: auto;
+    height: 100vh;
+    position: relative;
+}
+
+// 1600
+// 1200
+// 992
+// 768
+// 576
+
+
+.site-page{
+    margin-left: var(--aside-width);
+    padding: 40px 170px 32px 64px;
+}
+
+site-aside{
+    width: var(--aside-width);
+    position: sticky;
+    top: 0;
+    float: left;
+    height: 100vh;
+}
+
+
+// <= 768px
+@media (max-width: 768px) {
+    site-aside{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        transform: translateX(-100%);
+        transition: transform .15s ease-in;
+    }
+    .site-page{
+        margin-left: 0;
+    }
+    .aside-show{
+        transform: translateX(0);
+        transition: transform .25s ease-in-out;
+    }
+}
+
+// >= 1600px
+@media (min-width: 1600px) {
+
+}

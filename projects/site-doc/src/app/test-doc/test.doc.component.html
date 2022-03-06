@@ -1,0 +1,95 @@
+
+        <section class="markdown-body">
+            <p>警告提示，展现需要关注的信息。</p>
+<h2 id="何时使用">何时使用</h2>
+<ul>
+<li>当某个页面需要向用户显示警告的信息时。</li>
+<li>非浮层的静态展现形式，始终展现，不会自动消失，用户可以点击关闭。</li>
+</ul>
+<pre><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> NzAlertModule <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'ng-zorro-antd/alert'</span><span class="token punctuation">;</span>
+</code></pre>
+
+        </section>
+    
+
+
+        <section class="markdown-body">
+            <h2 id="api">API</h2>
+<h3 id="nz-alert">nz-alert</h3>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>说明</th>
+<th>类型</th>
+<th>默认值</th>
+<th>全局配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>[nzBanner]</code></td>
+<td>是否用作顶部公告</td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>[nzCloseable]</code></td>
+<td>默认不显示关闭按钮</td>
+<td><code>boolean</code></td>
+<td>-</td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>[nzCloseText]</code></td>
+<td>自定义关闭按钮</td>
+<td><code>string | TemplateRef&lt;void&gt;</code></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td><code>[nzDescription]</code></td>
+<td>警告提示的辅助性文字介绍</td>
+<td><code>string | TemplateRef&lt;void&gt;</code></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td><code>[nzMessage]</code></td>
+<td>警告提示内容</td>
+<td><code>string | TemplateRef&lt;void&gt;</code></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td><code>[nzShowIcon]</code></td>
+<td>是否显示辅助图标，<code>nzBanner</code> 模式下默认值为 <code>true</code></td>
+<td><code>boolean</code></td>
+<td><code>false</code></td>
+<td>✅</td>
+</tr>
+<tr>
+<td><code>[nzIconType]</code></td>
+<td>自定义图标类型，<code>nzShowIcon</code> 为 <code>true</code> 时有效</td>
+<td><code>string</code></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td><code>[nzType]</code></td>
+<td>指定警告提示的样式，<code>nzBanner</code> 模式下默认值为 <code>&#39;warning&#39;</code></td>
+<td><code>&#39;success&#39; | &#39;info&#39; | &#39;warning&#39; | &#39;error&#39;</code></td>
+<td><code>&#39;info&#39;</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>(nzOnClose)</code></td>
+<td>关闭时触发的回调函数</td>
+<td><code>EventEmitter&lt;void&gt;</code></td>
+<td>-</td>
+<td></td>
+</tr>
+</tbody></table>
+
+        </section>
+    
